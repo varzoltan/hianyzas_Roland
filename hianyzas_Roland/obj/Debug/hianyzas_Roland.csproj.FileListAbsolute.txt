@@ -1,0 +1,7 @@
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\bin\Debug\hianyzas_Roland.exe.config
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\bin\Debug\hianyzas_Roland.exe
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\bin\Debug\hianyzas_Roland.pdb
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\obj\Debug\hianyzas_Roland.csprojAssemblyReference.cache
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\obj\Debug\hianyzas_Roland.csproj.CoreCompileInputs.cache
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\obj\Debug\hianyzas_Roland.exe
+C:\Users\Rendszergazda\Documents\GitHub\hianyzas_Roland\hianyzas_Roland\obj\Debug\hianyzas_Roland.pdb

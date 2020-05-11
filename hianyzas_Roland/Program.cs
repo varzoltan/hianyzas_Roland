@@ -17,6 +17,12 @@ namespace hianyzas_Roland
             public string nev;
             public string hianyzas;
         }
+
+        struct Statisztkika
+        {
+            public string nev;
+            public int hianyzas;
+        }
         static void Main(string[] args)
         {
             Adat[] adatok = new Adat[600];
@@ -79,7 +85,7 @@ namespace hianyzas_Roland
             {
                 if (napnev == hetnapja(adatok[i].honap, adatok[i].nap))
                 {
-                    if(adatok[i].hianyzas[ora-1] == 'I' || adatok[i].hianyzas[ora - 1] == 'X' )
+                    if(adatok[i].hianyzas[ora-1] == 'I' || adatok[i].hianyzas[ora - 1] == 'X')
                     {
                         hianyzas++;
                     }
@@ -89,6 +95,43 @@ namespace hianyzas_Roland
             }
 
             Console.WriteLine("Ekkor összesen {0} óra hiányzás történt.",hianyzas);
+
+            //7.feladat
+            Statisztkika[] stat = new Statisztkika[n];
+            //string[] Nevek = new string[n];
+            int m = 0;
+            for (int i =0;i<n;i++)
+            {
+                int j = 0;
+                while (j<m && stat[j].nev != adatok[i].nev)
+                {
+                    j++;
+                }
+                if (j == m)
+                {
+                    stat[m].nev = adatok[i].nev;
+                    m++;
+                }
+
+                for(int k = 0;k<adatok[i].hianyzas.Length;k++)
+                {
+                    if (adatok[i].hianyzas[k] == 'I' || adatok[i].hianyzas[k] == 'X')
+                    {
+                        stat[j].hianyzas++;
+                    }
+                }
+            }
+            int max = 0;
+            int index = 0;
+            for (int i = 0;i<m;i++)
+            {
+                if (stat[i].hianyzas > max)
+                {
+                    max = stat[i].hianyzas;
+                    index = i;
+                }
+            }
+            Console.WriteLine("7.feladat\nA legtöbbet hiányzó tanulók: {0}", stat[index].nev);
 
             Console.ReadKey();
         }
